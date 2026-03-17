@@ -123,7 +123,7 @@ The Express server exposes the following endpoints (all accept/return JSON):
 - Static files: from `../wa-dashboard/dist`
 - SPA fallback: `../wa-dashboard/dist/index.html`
 
-If you have the `wa-dashboard` app:
+If you have the `wa-dashboard` app:  "https://github.com/shashwat2048/whatsapp-bot-dashboard"
 
 1. Build it (e.g. `npm run build` in that project).
 2. Ensure the build output directory is `dist` and lives at `../wa-dashboard/dist` relative to this backend.
@@ -143,16 +143,3 @@ If you don’t have or don’t use the dashboard, the API still works fine witho
 - Keep the `.wwebjs_auth` folder persistent on the server so you don’t need to rescan the QR code after every restart. (It is intentionally **not** tracked by Git.)
 
 ---
-
-## 8. What is ignored by Git?
-
-See `.gitignore` for details. Important entries:
-
-- `node_modules/`
-- `.env`
-- `bot.db`
-- `.wwebjs_auth/`
-- `.wwebjs_cache/`
-
-This keeps your repo clean and free from secrets and machine-specific data.
-
